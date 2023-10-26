@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.putSingleDiplomaLiveryBook = exports.getSingleDiplomaLiveryBook = exports.getAllDiplomaLiveryBook = exports.createDiplomaLiveryBook = void 0;
+exports.deleteSingleDiplomaLiveryBook = exports.putSingleDiplomaLiveryBook = exports.getSingleDiplomaLiveryBook = exports.getAllDiplomaLiveryBook = exports.createDiplomaLiveryBook = void 0;
 const dLiveryServices_1 = require("../services/dLiveryServices");
 /*******************************
  * Creates a diploma livery book.
@@ -66,7 +66,7 @@ const getSingleDiplomaLiveryBook = (req, res) => {
 };
 exports.getSingleDiplomaLiveryBook = getSingleDiplomaLiveryBook;
 /*******************************
- * Get Single diploma book.
+ * update  diploma book deatils.
  *
  * @param {Request} _req - The request object.
  * @param {Response} res - The response object.
@@ -86,4 +86,25 @@ const putSingleDiplomaLiveryBook = (req, res) => {
     }
 };
 exports.putSingleDiplomaLiveryBook = putSingleDiplomaLiveryBook;
+/*******************************
+ * Get Single diploma book.
+ *
+ * @param {Request} _req - The request object.
+ * @param {Response} res - The response object.
+ * @returns {void}
+ ******************************/
+const deleteSingleDiplomaLiveryBook = (req, res) => {
+    try {
+        (0, dLiveryServices_1.dLiverySingleBookDeleteServices)(req, res);
+    }
+    catch (error) {
+        console.log(error);
+        res.status(200).json({
+            message: "there was an server said error",
+            data: {},
+            status: 500,
+        });
+    }
+};
+exports.deleteSingleDiplomaLiveryBook = deleteSingleDiplomaLiveryBook;
 //# sourceMappingURL=dLiveryHendler.js.map

@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.dLiverySingleBookPutServices = exports.dLiveryBookCtrateServices = exports.dLiverySingleBookGetServices = exports.dLiveryBookGetServices = void 0;
+exports.dLiverySingleBookDeleteServices = exports.dLiverySingleBookPutServices = exports.dLiveryBookCtrateServices = exports.dLiverySingleBookGetServices = exports.dLiveryBookGetServices = void 0;
 const DLiveryModel_1 = __importDefault(require("../models/DLiveryModel"));
 const cloudinary_1 = __importDefault(require("../utils/cloudinary"));
 /**
@@ -187,4 +187,38 @@ const dLiverySingleBookPutServices = (req, res) => __awaiter(void 0, void 0, voi
     }
 });
 exports.dLiverySingleBookPutServices = dLiverySingleBookPutServices;
+/**
+ * Creates a diploma livery book services.
+ *
+ * @param {Request} req - The request object.
+ * @param {Response} res - The response object.
+ * @returns {void}
+ */
+const dLiverySingleBookDeleteServices = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const singleBooks = yield DLiveryModel_1.default.findOne({ _id: id });
+        if (singleBooks) {
+            const deleteBook = yield DLiveryModel_1.default.findByIdAndDelete({ _id: id });
+            res.status(200).json({
+                message: "successfuly delete book",
+                data: deleteBook,
+                status: 200,
+            });
+        }
+        else {
+            res.status(200).json({
+                message: "Book not found",
+                data: {},
+                status: 404,
+            });
+        }
+    }
+    catch (error) {
+        res
+            .status(200)
+            .json({ message: "plz! send valid data", data: {}, status: 400 });
+    }
+});
+exports.dLiverySingleBookDeleteServices = dLiverySingleBookDeleteServices;
 //# sourceMappingURL=dLiveryServices.js.map

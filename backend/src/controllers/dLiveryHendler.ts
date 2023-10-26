@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import {
   dLiveryBookCtrateServices,
   dLiveryBookGetServices,
+  dLiverySingleBookDeleteServices,
   dLiverySingleBookGetServices,
   dLiverySingleBookPutServices,
 } from "../services/dLiveryServices";
@@ -71,10 +72,8 @@ export const getSingleDiplomaLiveryBook: FuncationType = (req, res) => {
   }
 };
 
-
-
 /*******************************
- * Get Single diploma book.
+ * update  diploma book deatils.
  *
  * @param {Request} _req - The request object.
  * @param {Response} res - The response object.
@@ -93,3 +92,22 @@ export const putSingleDiplomaLiveryBook: FuncationType = (req, res) => {
   }
 };
 
+/*******************************
+ * Get Single diploma book.
+ *
+ * @param {Request} _req - The request object.
+ * @param {Response} res - The response object.
+ * @returns {void}
+ ******************************/
+export const deleteSingleDiplomaLiveryBook: FuncationType = (req, res) => {
+  try {
+    dLiverySingleBookDeleteServices(req, res);
+  } catch (error) {
+    console.log(error);
+    res.status(200).json({
+      message: "there was an server said error",
+      data: {},
+      status: 500,
+    });
+  }
+};

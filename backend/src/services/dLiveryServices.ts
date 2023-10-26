@@ -216,3 +216,39 @@ export const dLiverySingleBookPutServices: FuncationType = async (
       .json({ message: "plz! send valid data", data: {}, status: 400 });
   }
 };
+
+/**
+ * Creates a diploma livery book services.
+ *
+ * @param {Request} req - The request object.
+ * @param {Response} res - The response object.
+ * @returns {void}
+ */
+export const dLiverySingleBookDeleteServices: FuncationType = async (
+  req: Request,
+  res: Response
+) => {
+  try {
+    const { id } = req.params;
+    const singleBooks = await DLiveryModel.findOne({ _id: id });
+
+    if (singleBooks) {
+      const deleteBook = await DLiveryModel.findByIdAndDelete({ _id: id });
+      res.status(200).json({
+        message: "successfuly delete book",
+        data: deleteBook,
+        status: 200,
+      });
+    } else {
+      res.status(200).json({
+        message: "Book not found",
+        data: {},
+        status: 404,
+      });
+    }
+  } catch (error) {
+    res
+      .status(200)
+      .json({ message: "plz! send valid data", data: {}, status: 400 });
+  }
+};
