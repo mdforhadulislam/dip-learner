@@ -10,7 +10,7 @@ const router_1 = __importDefault(require("./router"));
 // express app
 const app = (0, express_1.default)();
 //middlewares useing
-app.use(middlewares_1.default);
 app.use(router_1.default);
+app.use(middlewares_1.default);
 exports.default = app;
 //# sourceMappingURL=app.js.map

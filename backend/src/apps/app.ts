@@ -1,4 +1,3 @@
-
 // Module dependencies
 import express from "express";
 import middlewares from "./middlewares";
@@ -8,7 +7,7 @@ import router from "./router";
 const app = express();
 
 //middlewares useing
-app.use(middlewares);
 app.use(router);
+app.use(middlewares);
 
 export default app;
