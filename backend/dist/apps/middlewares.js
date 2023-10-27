@@ -13,15 +13,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Module dependencies
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
-const helmet_1 = __importDefault(require("helmet"));
 const morgan_1 = __importDefault(require("morgan"));
 // middlewares
 const middlewares = [
     (0, cors_1.default)(),
     (0, morgan_1.default)("dev"),
     express_1.default.json(),
-    express_1.default.urlencoded({ extended: false }),
-    (0, helmet_1.default)(),
+    express_1.default.urlencoded({ extended: true }),
 ];
 exports.default = middlewares;
 //# sourceMappingURL=middlewares.js.map

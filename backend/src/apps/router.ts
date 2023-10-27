@@ -5,13 +5,13 @@ const router = express.Router();
 
 router.use("/api/v1/", RouterV1);
 
-router.use("*", (_req: Request, res: Response) => {
-  res.status(200).send({
-    message: "not found",
-    data: {},
-    status: 404,
-  });
-});
+// router.use("*", (_req: Request, res: Response) => {
+//   res.status(200).send({
+//     message: "not found",
+//     data: {},
+//     status: 404,
+//   });
+// });
 
 router.use("/health", (_req: Request, res: Response) => {
   res.status(200).json({

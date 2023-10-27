@@ -9,7 +9,6 @@
 // Module dependencies
 import cors from "cors";
 import express from "express";
-import helmet from "helmet";
 import loger from "morgan";
 
 // middlewares
@@ -17,8 +16,7 @@ const middlewares: any = [
   cors(),
   loger("dev"),
   express.json(),
-  express.urlencoded({ extended: false }),
-  helmet(),
+  express.urlencoded({ extended: true }),
 ];
 
 export default middlewares;
