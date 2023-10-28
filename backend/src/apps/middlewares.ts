@@ -16,7 +16,7 @@ const middlewares: any = [
   cors(),
   loger("dev"),
   express.json(),
-  express.urlencoded({ extended: true }),
+  express.urlencoded({ extended: false }),
 ];
 
 export default middlewares;

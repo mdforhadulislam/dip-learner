@@ -19,7 +19,7 @@ const middlewares = [
     (0, cors_1.default)(),
     (0, morgan_1.default)("dev"),
     express_1.default.json(),
-    express_1.default.urlencoded({ extended: true }),
+    express_1.default.urlencoded({ extended: false }),
 ];
 exports.default = middlewares;
 //# sourceMappingURL=middlewares.js.map

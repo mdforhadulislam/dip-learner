@@ -1,22 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import AdminLayout from "./utils/AdminLayout";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import "./styles/main.css";
+import "./styles/styles.css";
 
 function App() {
   return (
     <>
       <Routes>
         {/* this all route access only user  */}
-        <Route
-          index
-          path="/"
-          element={
-            
-              <AdminLayout>Home</AdminLayout>
-            
-          }
-        />
+        <Route index path="/" element={<Home />} />
 
-        <Route path="/about" element={<h1>About</h1>} />
+        <Route path="/about" element={<About />} />
         <Route path="/library" element={<h1>library</h1>} />
         <Route path="/contact" element={<h1>contact</h1>} />
 

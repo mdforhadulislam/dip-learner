@@ -25,6 +25,7 @@ const setupDB = () => {
     })
         .catch((error) => {
         console.log(`database not connections`);
+        setupDB();
     });
 };
 exports.default = setupDB;
