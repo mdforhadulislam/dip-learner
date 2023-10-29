@@ -1,5 +1,6 @@
 import { Button } from "@material-tailwind/react";
 import React, { useState } from "react";
+import navBarRouteOption from "../../Data/navbar";
 import Logo from "../../utils/Logo";
 import MenuButton from "./MenuButton";
 import NavButton from "./NavButton";
@@ -22,49 +23,24 @@ const NavBar = () => {
             } lg:block w-full lg:w-auto`}
           >
             <ul className="flex flex-col p-2 mt-4 bg-gray-50 rounded-lg border border-gray-100 lg:flex-row lg:align-middle lg:items-center lg:space-x-9 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 lg:bg-[#fff0]">
-              <NavButton
-                link={"/"}
-                title={"Home"}
-                action={() => {
-                  setNavbar(!navbar);
-                }}
-                style={``}
-              />
-              <NavButton
-                link={"/about"}
-                title={"About"}
-                action={() => {
-                  setNavbar(!navbar);
-                }}
-                style={``}
-              />
-              <NavButton
-                link={"/library"}
-                title={"Library"}
-                action={() => {
-                  setNavbar(!navbar);
-                }}
-                style={``}
-              />
-              <NavButton
-                link={"/contact"}
-                title={"Contact"}
-                action={() => {
-                  setNavbar(!navbar);
-                }}
-                style={``}
-              />
+              {navBarRouteOption.map((item) => (
+                <NavButton
+                  key={item.id}
+                  link={item.link}
+                  title={item.name}
+                  action={() => {
+                    setNavbar(!navbar);
+                  }}
+                  style={``}
+                />
+              ))}
+
               <div className="space-x-2 block lg:inline-block">
                 <Button
                   className={`px-4 py-2 text-center text-[16.6px] shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block `}
                   fullWidth
                 >
-                  <a
-                    href="/auth/login"
-                    // className="px-4 py-2 text-center text-[16.6px] rounded-md shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block lg:inline-block mt-1"
-                  >
-                    Login
-                  </a>
+                  <a href="/auth/login"> Login </a>
                 </Button>
               </div>
             </ul>

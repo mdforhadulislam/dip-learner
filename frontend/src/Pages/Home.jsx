@@ -1,10 +1,11 @@
 import React from "react";
+import HeroSection from "../Components/Home/HeroSection";
 import UserLayout from "../utils/UserLayout";
 
 const Home = () => {
   return (
     <UserLayout>
-      <div>Home</div>
+      <HeroSection />
     </UserLayout>
   );
 };

@@ -6,10 +6,10 @@ const Logo = ({ style, link, textStyle }) => {
       href={link || "/"}
       title={"Blood Donation Media"}
       about={"Blood Donation Media Home Page"}
-      className={`w-auto flex items-center ${style}`}
+      className={`w-auto flex items-center`}
     >
       <img
-        className="w-auto mr-3 h-10"
+        className={`${style || "w-auto h-10"}  mr-3`}
         src={"./LOGO_3.png"}
         alt="Dip Learner Logo"
       />

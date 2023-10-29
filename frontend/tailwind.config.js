@@ -14,6 +14,9 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Jost", "sans-serif"],
+    },
     extend: {
       boxShadow: {
         "3xl": "0vw 0vw 0.5vw 0vw rgb(32 32 32 / 12%)",
