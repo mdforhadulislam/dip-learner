@@ -1,3 +1,4 @@
+import { Button } from "@material-tailwind/react";
 import React, { useState } from "react";
 import Logo from "../../utils/Logo";
 import MenuButton from "./MenuButton";
@@ -54,12 +55,17 @@ const NavBar = () => {
                 style={``}
               />
               <div className="space-x-2 block lg:inline-block">
-                <a
-                  href="/login"
-                  className="px-4 py-2 text-center text-[16.6px] rounded-md shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block lg:inline-block mt-1"
+                <Button
+                  className={`px-4 py-2 text-center text-[16.6px] shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block `}
+                  fullWidth
                 >
-                  Login
-                </a>
+                  <a
+                    href="/auth/login"
+                    // className="px-4 py-2 text-center text-[16.6px] rounded-md shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block lg:inline-block mt-1"
+                  >
+                    Login
+                  </a>
+                </Button>
               </div>
             </ul>
           </div>
