@@ -37,7 +37,7 @@ const NavBar = () => {
 
               <div className="space-x-2 block lg:inline-block">
                 <Button
-                  className={`px-4 py-2 text-center text-[16.6px] shadow  hover:bg-[#ffb61a] bg-[#ffc21a] text-white transition duration-300 block `}
+                  className={`px-4 py-2 text-center text-[16.6px] shadow  hover:bg-[#29b6e0] bg-[#00B1E9] text-white transition duration-300 block `}
                   fullWidth
                 >
                   <a href="/auth/login"> Login </a>
