@@ -1,5 +1,6 @@
 import footerLinks from "@/Data/footer";
 import Logo from "@/Utils/Logo";
+import Image from "next/image";
 import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
@@ -9,20 +10,26 @@ const FooterBar = () => {
     <footer className="relative w-full p-3 md:p-6 lg:p-8 ">
       <div className="mx-auto w-full max-w-7xl relative h-32 z-10">
         <div className="w-full h-auto absolute z-10">
-          <img
+          <Image
             className="w-full h-auto hidden lg:block"
-            src="./books_4.png"
+            src="/books_4.png"
             alt="book-images"
+            width={1000}
+            height={1000}
           />
-          <img
+          <Image
             className="w-full h-auto hidden sm:block lg:hidden"
-            src="./books_2.png"
+            src="/books_2.png"
             alt="book-images"
+            width={1000}
+            height={1000}
           />
-          <img
+          <Image
             className="w-full h-auto sm:hidden block"
-            src="./books_3.png"
+            src="/books_3.png"
             alt="book-images"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
@@ -64,25 +71,45 @@ const FooterBar = () => {
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <img src="./github.png" alt="Github logo" />
+              <Image
+                src="/github.png"
+                alt="Github logo"
+                width={24}
+                height={24}
+              />
             </a>
             <a
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <img src="./facebook.png" alt="facebook logo" />
+              <Image
+                width={24}
+                height={24}
+                src="/facebook.png"
+                alt="facebook logo"
+              />
             </a>
             <a
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <img src="./instragram.png" alt="instragram logo" />
+              <Image
+                width={24}
+                height={24}
+                src="/instragram.png"
+                alt="instragram logo"
+              />
             </a>
             <a
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <img src="./twitter.png" alt="twitter logo" />
+              <Image
+                width={24}
+                height={24}
+                src="/twitter.png"
+                alt="twitter logo"
+              />
             </a>
           </div>
         </div>
