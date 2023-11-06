@@ -14,3 +14,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-background-image {
+  background-image: url("../../public/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
