@@ -15,8 +15,28 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-background-image {
-  background-image: url("../../public/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.rotated-cercel {
+  animation: rootCercelRotated linear 8s infinite;
+}
+
+@keyframes rootCercelRotated {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.book-rotated {
+  animation: BookRotated linear 8s infinite;
+}
+
+@keyframes BookRotated {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
