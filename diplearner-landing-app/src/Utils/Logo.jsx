@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Logo = ({ style, link, textStyle }) => {
   return (
@@ -9,7 +10,7 @@ const Logo = ({ style, link, textStyle }) => {
       about={"Blood Donation Media Home Page"}
       className={`w-auto flex items-center`}
     >
-      <img
+      <Image
         className={`${style || "w-auto h-10"}  mr-3`}
         src={"./LOGO_3.png"}
         alt="Dip Learner Logo"
