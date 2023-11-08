@@ -6,6 +6,7 @@
       "@utils/*": ["./src/Utils"],
       "@components/*": ["./src/Components"],
       "@data/*": ["./src/Data"],
+      "@public/*": ["./public"]
     }
   }
 }

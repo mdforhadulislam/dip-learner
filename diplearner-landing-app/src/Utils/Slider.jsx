@@ -2,47 +2,61 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop3: {
+    breakpoint: { max: 3000, min: 1500 },
+    items: 4,
+  },
+  desktop2: {
+    breakpoint: { max: 1500, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+  },
+  desktop1: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 2,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 800, min: 600 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
-    slidesToSlide: 1, // optional, default to 1.
   },
 };
 
-const Slider = ({ children, options }) => {
+const Slider = ({ children, coustomResponsive }) => {
   return (
     <Carousel
-      responsive={responsive}
-      swipeable={false}
-      draggable={false}
-      showDots={true}
-      ssr={true} // means to render carousel on server-side.
+      swipeable={true}
+      draggable={true}
+      showDots={false}
+      responsive={coustomResponsive ? coustomResponsive : responsive}
+      ssr={true}
       infinite={true}
       autoPlay={true}
-      autoPlaySpeed={1000}
+      autoPlaySpeed={2600}
       keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
+      customTransition="all 1s"
+      transitionDuration={1000}
       containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      // deviceType={}
+      removeArrowOnDeviceType={[
+        "tablet",
+        "mobile",
+        "desktop1",
+        "desktop2",
+        "desktop3",
+      ]}
+      rewindWithAnimation={true}
+      shouldResetAutoplay={true}
       dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
+      itemClass="carousel-item-padding-40-px py-8"
     >
-      <div className="w-28 h-28 bg-slate-500">helllo</div>
-      <div className="w-28 h-28 bg-slate-500">helllo</div>
-      <div className="w-28 h-28 bg-slate-500">helllo</div>
-      <div className="w-28 h-28 bg-slate-500">helllo</div>
+      {children}
     </Carousel>
   );
 };

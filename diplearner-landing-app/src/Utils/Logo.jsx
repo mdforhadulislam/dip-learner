@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+import LogoPng from "../../public/LOGO_3.png";
 
 const Logo = ({ style, link, textStyle }) => {
   return (
@@ -12,10 +13,8 @@ const Logo = ({ style, link, textStyle }) => {
     >
       <Image
         className={`${style || "w-auto h-10"}  mr-3`}
-        src={"./image.png"}
+        src={LogoPng}
         alt="Dip Learner Logo"
-        width={"100%"}
-        height={"100%"}
       />
     </Link>
   );

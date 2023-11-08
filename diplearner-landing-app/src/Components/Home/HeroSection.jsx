@@ -4,8 +4,8 @@ const HeroSection = () => {
   return (
     <div className="w-full h-full">
       {/* left said  */}
-      <div className=" max-w-[1280px] overflow-hidden m-auto flex flex-row align-middle items-center">
-        <div className=" w-full lg:max-w-4xl p-4 flex flex-row">
+      <div className=" lg:container overflow-hidden m-auto flex flex-row align-middle items-center">
+        <div className="w-full p-4 flex flex-row justify-evenly">
           {/* left said  */}
           <div className="w-full h-auto">
             <div className="">
@@ -34,8 +34,12 @@ const HeroSection = () => {
               </h1>
             </div>
             <div className="w-auto py-5">
-              <p className=" w-full md:w-3/4 text-lg text-[#376179] italic">
-                There is no online education system for those of us who study under Board of Technical Education. So I have come up with our online technical books of all subjects and books with multiple tutorials on each subject. From here you will get a good learning system. Thanks everyone.
+              <p className=" w-full md:w-[80%] text-lg text-[#376179] italic">
+                There is no online education system for those of us who study
+                under Board of Technical Education. So I have come up with our
+                online technical books of all subjects and books with multiple
+                tutorials on each subject. From here you will get a good
+                learning system. Thanks everyone.
               </p>
             </div>
             <div className="w-full h-auto flex flex-row justify-between pr-2 md:pr-10">
@@ -56,15 +60,61 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+          {/* rotated said */}
+          <div className="hidden w-full h-full lg:block mt-20">
+            <div className="w-full h-auto flex justify-center align-middle items-center">
+              <div className="w-96 h-96 flex items-center align-middle justify-center rounded-full  border-dashed border-[2px] border-gray-600 relative rotated-cercel">
+                <div className="w-48 h-48 flex justify-center align-middle items-center bg-[#376179] rounded-full shadow-5xl">
+                  <div className="w-28 h-28 bg-[#DA8B2E] rounded-full shadow-4xl"></div>
+                </div>
+
+                <div className=" absolute top-0 left-0 book-rotated  pl-2 pt-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/book-1.png"
+                    alt="book image"
+                  />
+                </div>
+
+                <div className=" absolute top-0 right-0 book-rotated  pl-2 pt-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/book-2.png"
+                    alt="book image"
+                  />
+                </div>
+
+                <div className=" absolute top-[60%] left-0 book-rotated  pl-2 pt-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/book-1.png"
+                    alt="book image"
+                  />
+                </div>
+
+                <div className=" absolute top-[60%] right-0 book-rotated pl-2 pt-2">
+                  <Image
+                    width={100}
+                    height={100}
+                    src="/book-2.png"
+                    alt="book image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* right said  */}
-          <div className="w-full h-auto hidden md:block relative">
+          <div className="w-full h-auto hidden md:flex items-end flex-col relative">
             <Image
               width={100}
               height={100}
               src={"/book-dp.png"}
               alt="hero image"
-              className="absolute left-16 lg:left-2 top-4"
+              className="absolute right-[220px] top-4"
             />
             <Image
               width={280}
@@ -73,57 +123,10 @@ const HeroSection = () => {
               alt="hero image"
               className="mt-24  h-[350px] ml-[25%] lg:ml-[12%]"
             />
-            <div className="w-full h-auto pt-3">
-              <p className="text-lg italic text-[#376179]">
+            <div className="w-[300px] h-auto pt-3">
+              <p className="text-lg italic text-[#376179] text-right">
                 Where Everything To Need To Know Is Only An Arm’s Length Away!
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* right said */}
-        <div className=" max-w-sm hidden w-full h-full lg:block ">
-          <div className="w-full h-auto flex justify-center align-middle items-center -ml-12">
-            <div className="w-96 h-96 flex items-center align-middle justify-center rounded-full  border-dashed border-[2px] border-gray-600 relative rotated-cercel">
-              <div className="w-48 h-48 flex justify-center align-middle items-center bg-[#376179] rounded-full shadow-5xl">
-                <div className="w-28 h-28 bg-[#DA8B2E] rounded-full shadow-4xl"></div>
-              </div>
-
-              <div className=" absolute top-0 left-0 book-rotated  pl-2 pt-2">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/book-1.png"
-                  alt="book image"
-                />
-              </div>
-
-              <div className=" absolute top-0 right-0 book-rotated  pl-2 pt-2">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/book-2.png"
-                  alt="book image"
-                />
-              </div>
-
-              <div className=" absolute top-[60%] left-0 book-rotated  pl-2 pt-2">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/book-1.png"
-                  alt="book image"
-                />
-              </div>
-
-              <div className=" absolute top-[60%] right-0 book-rotated pl-2 pt-2">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/book-2.png"
-                  alt="book image"
-                />
-              </div>
             </div>
           </div>
         </div>
