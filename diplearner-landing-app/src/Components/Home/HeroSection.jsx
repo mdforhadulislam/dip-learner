@@ -35,10 +35,7 @@ const HeroSection = () => {
             </div>
             <div className="w-auto py-5">
               <p className=" w-full md:w-3/4 text-lg text-[#376179] italic">
-                Syhet anask kros saras raskapet tening, sedan flyttstajla
-                jemifatt men rearade inte ontomani en paddeltennis inte
-                förortare sen. Pneumasion härade. Ovis telematisk, bloggbävning:
-                savis. Du kan vara drabbad.
+                There is no online education system for those of us who study under Board of Technical Education. So I have come up with our online technical books of all subjects and books with multiple tutorials on each subject. From here you will get a good learning system. Thanks everyone.
               </p>
             </div>
             <div className="w-full h-auto flex flex-row justify-between pr-2 md:pr-10">
