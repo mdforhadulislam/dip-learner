@@ -5,7 +5,7 @@ const BookOptionCard = () => {
   return (
     <div className="w-full h-auto p-3 shadow-4xl rounded-md flex items-start align-top">
       <div className="w-[200px] h-[230px]">
-        <Image width={160} height={200} src={"/Book-1.png"} alt="Book image" />
+        <Image width={160} height={200} src={"/book-1.png"} alt="Book image" />
       </div>
       <div className="max-w-[200px] sm:max-w-[350px] h-auto">
         <h1 className="text-xl font-semibold mb-2 italic">Genarel Book</h1>
