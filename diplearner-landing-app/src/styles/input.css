@@ -40,3 +40,10 @@
     transform: rotate(-360deg);
   }
 }
+
+.selfBgImage {
+  background-image: url("../../public/book_self_card.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
