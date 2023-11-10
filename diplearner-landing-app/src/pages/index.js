@@ -3,8 +3,7 @@ import BookShowSection from "@/Components/Home/BookShowSection";
 import HeroSection from "@/Components/Home/HeroSection";
 import LibrarySerction from "@/Components/Home/LibrarySerction";
 import OptionSection from "@/Components/Home/OptionSection";
-import SearchBook from "@/Components/Home/SearchBook";
-import SearchBookShowSection from "@/Components/Home/SearchBookShowSection";
+import PricingSection from "@/Components/Home/PricingSection";
 
 export default function Home() {
   return (
@@ -14,8 +13,7 @@ export default function Home() {
       <BookShowSection />
       <LibrarySerction />
       <AboutSection />
-      <SearchBook />
-      <SearchBookShowSection />
+      <PricingSection />
     </>
   );
 }

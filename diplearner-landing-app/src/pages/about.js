@@ -1,8 +1,9 @@
+import AboutSection from "@/Components/Home/AboutSection";
+
 export default function About() {
-   return(
-     <div>
-       
-     </div>
-   )
- }
- 
+  return (
+    <div>
+      <AboutSection />
+    </div>
+  );
+}

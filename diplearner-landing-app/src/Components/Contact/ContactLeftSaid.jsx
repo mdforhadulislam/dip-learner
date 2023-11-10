@@ -17,7 +17,7 @@ const ContactLeftSaid = () => {
           minim veniam quis nostrud exercitation ullamco
         </p>
         <div className="flex mb-8 max-w-[370px] w-full">
-          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded ">
+          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-opacity-5 text-primary rounded ">
             <Image
               width={"40"}
               height={"40"}
@@ -35,7 +35,7 @@ const ContactLeftSaid = () => {
           </div>
         </div>
         <div className="flex mb-8 max-w-[370px] w-full">
-          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded">
+          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden  bg-opacity-5 text-primary rounded">
             <Image
               width={"40"}
               height={"40"}
@@ -51,7 +51,7 @@ const ContactLeftSaid = () => {
           </div>
         </div>
         <div className="flex mb-8 max-w-[370px] w-full">
-          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden bg-primary bg-opacity-5 text-primary rounded">
+          <div className="max-w-[60px] sm:max-w-[70px] w-full h-[60px] sm:h-[70px] flex items-center justify-center mr-6 overflow-hidden  bg-opacity-5 text-primary rounded">
             <Image
               width={"40"}
               height={"40"}
