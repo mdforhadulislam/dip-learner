@@ -14,7 +14,7 @@ const SelfBookCard = () => {
           />
         </div>
       </div>
-      <div className=" absolute h-[0px] top-0 left-0  w-full  z-20 group-hover:p-3  group-hover:h-full transition-all">
+      <div className=" absolute h-[0px] top-0 left-0  w-full  z-20  group-hover:h-full transition-all">
         <div className="w-full h-full rounded-md group-hover:shadow-4xl  group-hover:p-3  overflow-hidden backdrop-blur-md bg-white/80 flex flex-col  gap-2">
           <h1 className="text-lg font-semibold mb-[2px]">
             Book hello world - 2024 - (404943)
@@ -22,8 +22,7 @@ const SelfBookCard = () => {
           <p className=" text-base font-normal italic">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cumque
             asperiores possimus nisi praesentium veniam dolorem illum ratione,
-            rem sunt ipsum? Exercitationem laudantium adipisci iste totam
-            possimus? Similique, sequi tempora.
+            rem sunt ipsum
           </p>
           <Link
             className={`px-4 py-2 text-center text-md shadow  hover:bg-[#29b6e0] bg-[#00B1E9] text-white transition duration-300 rounded-md flex items-center align-middle justify-center`}
