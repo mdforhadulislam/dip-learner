@@ -9,7 +9,7 @@ const SelfBookCard = () => {
         <div>
           <Image
             src={BookImage}
-            className="w-[130px] sm:w-[160px] md:w-[210px] m-auto"
+            className="w-[160px] md:w-[210px] m-auto"
             alt="Book"
           />
         </div>

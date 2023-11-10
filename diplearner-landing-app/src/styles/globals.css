@@ -875,6 +875,10 @@ video {
   width: 100%;
 }
 
+.w-\[140px\]{
+  width: 140px;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
