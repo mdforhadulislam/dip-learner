@@ -54,7 +54,7 @@ const Slider = ({ children, coustomResponsive }) => {
       rewindWithAnimation={true}
       shouldResetAutoplay={true}
       dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px py-8"
+      itemClass="carousel-item-padding-40-px py-8 z-10"
     >
       {children}
     </Carousel>
