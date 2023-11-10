@@ -15,8 +15,8 @@ const SelfBookCard = () => {
           />
         </div>
       </div>
-      <div className=" absolute h-[calc(100%-10px)] p-3 top-0 left-0  w-full  z-20 hidden  group-hover:block transition-all">
-        <div className="w-full h-full rounded-md group-hover:shadow-4xl  group-hover:p-3  overflow-hidden backdrop-blur-md bg-white/80 flex flex-col  gap-2">
+      <div className=" absolute h-[calc(100%-10px)] p-3 top-0 left-0  w-full  z-20 group-hover:opacity-100 opacity-0 transition-all">
+        <div className="w-full h-full rounded-md shadow-4xl  p-3  overflow-hidden backdrop-blur-md bg-white/80 flex flex-col  gap-2">
           <h1 className="text-lg font-semibold mb-[2px]">
             Book hello world - 2024 - (404943)
           </h1>
