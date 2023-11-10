@@ -4,17 +4,18 @@ import BookImage from "../../../public/book-2.png";
 
 const SelfBookCard = () => {
   return (
-    <div className="w-full h-auto p-2 relative group">
+    <div className="w-full h-auto p-2 relative group z-[95]">
       <div className="w-full h-auto p-2 pb-4  ">
         <div>
           <Image
             src={BookImage}
             className="w-[160px] md:w-[210px] m-auto"
             alt="Book"
+            datas
           />
         </div>
       </div>
-      <div className=" absolute h-[0px] top-0 left-0  w-full  z-20  group-hover:h-full transition-all">
+      <div className=" absolute h-[calc(100%-10px)] p-3 top-0 left-0  w-full  z-20 hidden  group-hover:block transition-all">
         <div className="w-full h-full rounded-md group-hover:shadow-4xl  group-hover:p-3  overflow-hidden backdrop-blur-md bg-white/80 flex flex-col  gap-2">
           <h1 className="text-lg font-semibold mb-[2px]">
             Book hello world - 2024 - (404943)

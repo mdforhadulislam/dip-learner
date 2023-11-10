@@ -9,7 +9,7 @@ const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full block">
-      <nav className=" backdrop-blur-md bg-white/60 shadow-3xl px-2 sm:px-4 py-1.5 fixed w-full z-30">
+      <nav className=" backdrop-blur-md bg-white/60 shadow-3xl px-2 sm:px-4 py-1.5 fixed w-full z-[100]">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Logo link={"/"} />
           <MenuButton

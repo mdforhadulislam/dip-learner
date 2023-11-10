@@ -47,3 +47,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+.z-\[95\] {
+  z-index: 95;
+}
