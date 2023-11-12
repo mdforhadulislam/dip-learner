@@ -4,13 +4,18 @@ import AboutUsImage from "../../../public/about_us.png";
 const AboutSection = () => {
   return (
     <div className="w-full h-auto">
-      <div className=" w-full h-auto text-center mb-6">
-        <h1 className="text-5xl sm:text-7xl italic font-bold text-[#376179] mb-2">
-          About Our Library
+      <div className=" w-full h-auto text-center py-5 p-2">
+        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">
+          About Our Libray
         </h1>
-        <span className="max-w-[300px] h-2 bg-[#376179] block m-auto"></span>
+
+        <p className="max-w-2xl mx-auto mt-4 text-center text-gray-500 xl:mt-6 ">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas
+          magni libero consequuntur voluptatum velit amet id repudiandae ea,
+          deleniti laborum in neque eveniet.
+        </p>
       </div>
-      <div className=" container m-auto h-full py-8 px-2">
+      <div className=" container m-auto h-full px-2">
         <div className="w-full h-auto flex flex-col md:flex-row gap-4 items-center align-middle">
           <Image
             src={AboutUsImage}

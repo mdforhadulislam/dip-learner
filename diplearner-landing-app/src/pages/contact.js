@@ -1,10 +1,19 @@
 import ContactHeding from "@/Components/Contact/ContactHeding";
 import ContactLeftSaid from "@/Components/Contact/ContactLeftSaid";
 import ContactRightSaid from "@/Components/Contact/ContactRightSaid";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <>
+      <Head>
+        <meta
+          name="DipLearner Contact With Us"
+          title="DipLearner Contact With Us"
+          content="You have any problem you can contact with us. we alawys conected with you. you need any souppet we alawys with you"
+        />
+        <title>Contact</title>
+      </Head>
       <ContactHeding />
       <div className="max-w-[1366px] h-auto m-auto">
         <div className="container m-auto h-auto">

@@ -3,13 +3,18 @@ import BookSelfBox from "./BookSelfBox";
 const LibrarySerction = () => {
   return (
     <div className="w-full h-auto py-8 p-2">
-      <div className=" w-full h-auto text-center mb-6">
-        <h1 className="text-5xl sm:text-7xl italic font-bold text-[#376179] mb-2">
-          Book Collection
+      <div className=" w-full h-auto text-center">
+        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">
+          Our Book Collection
         </h1>
-        <span className="max-w-[300px] h-2 bg-[#376179] block m-auto"></span>
+
+        <p className="max-w-2xl mx-auto mt-4 text-center text-gray-500 xl:mt-6 ">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas
+          magni libero consequuntur voluptatum velit amet id repudiandae ea,
+          deleniti laborum in neque eveniet.
+        </p>
       </div>
-      <div className=" container p-4  m-auto">
+      <div className=" container p-4 pt-1  m-auto">
         <BookSelfBox />
         <BookSelfBox />
         <BookSelfBox />

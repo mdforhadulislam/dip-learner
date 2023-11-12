@@ -733,3 +733,122 @@ pricing slider
 .noUi-horizontal .noUi-handle:before {
   display: none;
 }
+
+/* scroll bar styling custom table */
+
+.hiddenScrollBar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-button:single-button {
+  background-color: #f1f1f1;
+  display: block;
+  background-size: 7px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-radius: 10px 10px 0 0;
+  height: 10px;
+  width: 7px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(102, 102, 102)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+/* Down */
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-radius: 0px 0px 10px 10px;
+  height: 10px;
+  width: 7px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(102, 102, 102)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+/* Left */
+.scrollbar::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  border-radius: 10px 0px 0 10px;
+  height: 7px;
+  width: 7px;
+  background-position: 0px 0px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(102, 102, 102)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+/* Right */
+.scrollbar::-webkit-scrollbar-button:single-button:horizontal:increment {
+  border-radius: 0 10px 10px 0;
+  height: 7px;
+  width: 7px;
+  background-position: 0px 0px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(102, 102, 102)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+/* End scroll bar modify */
+
+/* checkbox style start  */
+.checkbox__container .checkbox__container__input label::before {
+  content: "";
+  background-image: url(../../public/rigth-mark.svg);
+  background-position: center;
+  background-size: cover;
+  width: 36px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  top: -6px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  z-index: 99;
+}
+
+.checkbox__container__input .checked::before {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.checkbox__container__input .unchecked::before {
+  -webkit-transform: scale(0) !important;
+  transform: scale(0) !important;
+}
+
+.checkbox__container .checkbox__container__input label::after {
+  content: "";
+  border: 1.56px solid #00b1e9;
+  border-radius: 0.3vw;
+  width: 20.4px;
+  height: 18.5px;
+  position: absolute;
+  left: -26.4px;
+  top: 1.5px;
+  /* z-index: 1; */
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(32, 32, 32, 0.15);
+  box-shadow: 0px 0px 6px 0px rgba(32, 32, 32, 0.15);
+}
+
+/* checkbox style start  */
+
+/* date picker style  */
+.rdp {
+  margin: 0 !important;
+  --rdp-cell-size: 35px !important;
+  --rdp-accent-color: #00b1e9 !important;
+  --rdp-background-color: #00b1e9 !important;
+  --rdp-accent-color-dark: 0;
+  --rdp-background-color-dark: 0;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+}

@@ -98,8 +98,8 @@ const SearchBook = () => {
     <div className="max-w-full h-auto m-auto">
       <div className="relative">
         <div className="relative">
-          <div className="z-20 absolute inset-0 h-full flex flex-col gap-4 justify-center w-max mx-auto">
-            <h1 className="text-white text-4xl font-bold">
+          <div className="z-20 absolute inset-0 h-full flex flex-col gap-4 justify-center items-center align-middle">
+            <h1 className="text-white text-4xl font-bold text-center">
               What book you looking for?
             </h1>
             <div className="flex flex-col gap-4 md:gap-0 md:flex-row items-center md:rounded-md overflow-hidden">
