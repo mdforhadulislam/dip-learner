@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MenuButton from "./MenuButton";
 import NavButton from "./NavButton";
-import Image from "";
+import Image from "next/image";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
