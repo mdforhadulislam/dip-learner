@@ -15,6 +15,7 @@ const BookDetails = () => {
           <div className="h-auto flex gap-2">
             <TagBox title={"civil"} />
             <TagBox title={"power"} />
+            <TagBox title={"civil"} />
             <TagBox title={"computer"} />
           </div>
         </div>

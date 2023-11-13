@@ -59,7 +59,7 @@ const LibraryCategories = () => {
             <select
               name="engining"
               id="engining-depatmeant"
-              className="bg-gray-50 border border-[#00b1e9] text-gray-900 text-sm rounded-lg focus:ring-[#00b1e9] focus:border-[#00b1e9]  w-auto p-2.5 inline-block"
+              className="bg-gray-50 border border-[#00b1e9] text-gray-900 text-sm rounded-lg focus:ring-[#00b1e9] focus:border-[#00b1e9]  w-auto p-2.5 inline-block active:outline-none"
             >
               <option value="">Electrical Technology</option>
               <option value="">Civil Technology</option>
