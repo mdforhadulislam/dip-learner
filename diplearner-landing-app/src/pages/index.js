@@ -15,7 +15,7 @@ export default function Home() {
           title="DipLearner Web App"
           content="It is an online education website. You can read any book by visiting this website"
         />
-        <title>Home</title>
+        <title>DipLearner Web App || Home</title>
       </Head>
       <HeroSection />
       <OptionSection />
