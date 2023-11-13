@@ -14,7 +14,7 @@ const PricingSection = () => {
                 <p className="font-medium text-gray-500 uppercase ">Free</p>
 
                 <h2 className="text-4xl font-semibold text-gray-800 uppercase ">
-                    $0
+                    0৳
                 </h2>
 
                 <p className="font-medium text-gray-500 ">Life time</p>
@@ -28,10 +28,10 @@ const PricingSection = () => {
                 <p className="font-medium text-gray-200 uppercase">Premium</p>
 
                 <h2 className="text-5xl font-bold text-white uppercase ">
-                    $40
+                    100৳
                 </h2>
 
-                <p className="font-medium text-gray-200">Per month</p>
+                <p className="font-medium text-gray-200">Per Semester</p>
 
                 <button className="w-full px-4 py-2 mt-10 tracking-wide text-[#00B1E9] capitalize transition-colors duration-300 transform bg-white rounded-md ">
                     Start Now
@@ -42,7 +42,7 @@ const PricingSection = () => {
                 <p className="font-medium text-gray-500 uppercase ">Enterprise</p>
 
                 <h2 className="text-4xl font-semibold text-gray-800 uppercase ">
-                    $100
+                    300৳
                 </h2>
 
                 <p className="font-medium text-gray-500 ">Life time</p>

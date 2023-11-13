@@ -2598,7 +2598,7 @@ pricing slider
 
 .checkbox__container .checkbox__container__input label::before {
   content: "";
-  background-image: url(../../public/rigth-mark.svg);
+  background-image: url(https://dip-land.vercel.app/rigth-mark.svg);
   background-position: center;
   background-size: cover;
   width: 36px;

@@ -7,7 +7,7 @@ const Error = () => {
     <>
       <Head>
         <meta name="DipLearner" title="DipLearner" content="Page not Found" />
-        <title>Page Not Found</title>
+        <title>DipLearner || Page Not Found</title>
       </Head>
       <div className="w-full h-auto p-8 pt-0">
         <div className=" container m-auto  h-auto text-center">
