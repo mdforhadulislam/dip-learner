@@ -12,7 +12,7 @@ export default function Contact() {
           title="DipLearner Contact With Us"
           content="You have any problem you can contact with us. we alawys conected with you. you need any souppet we alawys with you"
         />
-        <title>Contact</title>
+        <title>DipLearner || Contact</title>
       </Head>
       <ContactHeding />
       <div className="max-w-[1366px] h-auto m-auto">
