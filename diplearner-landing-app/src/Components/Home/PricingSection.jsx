@@ -45,7 +45,7 @@ const PricingSection = () => {
                     300৳
                 </h2>
 
-                <p className="font-medium text-gray-500 ">Life time</p>
+                <p className="font-medium text-gray-500 ">8 Semester</p>
 
                 <button className="w-full px-4 py-2 mt-10 tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#00B1E9] rounded-md ">
                     Start Now

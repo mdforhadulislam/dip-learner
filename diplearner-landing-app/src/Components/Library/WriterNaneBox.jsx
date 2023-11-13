@@ -1,4 +1,4 @@
-const TagBox = ({ title }) => {
+const WriterNaneBox = ({ title }) => {
   return (
     <span className="border py-1 px-3 font-medium italic text-base rounded-md inline-block m-1">
       {title}
@@ -6,4 +6,4 @@ const TagBox = ({ title }) => {
   );
 };
 
-export default TagBox;
+export default WriterNaneBox;
