@@ -8,7 +8,7 @@ const LibraryCategories = () => {
 
   return (
     <div className="w-full h-auto py-2 px-2 -mt-10">
-      <div className="container px-5 py-3 flex flex-col md:flex-row items-start md:items-center justify-center align-middle">
+      <div className="container px-5 py-3 flex flex-col md:flex-row items-start md:items-center ">
         <div className="pb-2 md:pb-0">
           <span className="text-base font-semibold italic pr-3 ">
             Categories:
