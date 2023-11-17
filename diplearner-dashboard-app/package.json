@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "style": "npx tailwindcss -i ./src/Styles/input.css -o ./src/Styles/globals.css --watch",
-    "dev": "concurrently \"command1 arg\" \"command2 arg\""
+    "dev": "concurrently \"npm run start\" \"npm run style\""
   },
   "eslintConfig": {
     "extends": [

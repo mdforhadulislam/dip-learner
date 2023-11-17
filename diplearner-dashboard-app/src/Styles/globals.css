@@ -1502,10 +1502,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   bottom:-0.25rem
 }
 
-.-bottom-\[30vh\]{
-  bottom:-30vh
-}
-
 .-bottom-px{
   bottom:-1px
 }
@@ -1606,6 +1602,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   bottom:116vh
 }
 
+.bottom-\[80vh\]{
+  bottom:80vh
+}
+
 .bottom-px{
   bottom:1px
 }
@@ -1702,52 +1702,24 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   top:1px
 }
 
-.bottom-\[\]{
-  bottom:
+.bottom-\[90vh\]{
+  bottom:90vh
 }
 
-.bottom-\[0px\]{
-  bottom:0px
+.bottom-\[0vh\]{
+  bottom:0vh
 }
 
-.-bottom-\[30px\]{
-  bottom:-30px
+.bottom-\[5vh\]{
+  bottom:5vh
 }
 
-.bottom-\[30px\]{
-  bottom:30px
+.bottom-\[50vh\]{
+  bottom:50vh
 }
 
-.bottom-\[calc\(100\%-6\.5px\)\]{
-  bottom:calc(100% - 6.5px)
-}
-
-.bottom-\[calc\(100\%-20\%\)\]{
-  bottom:calc(100% - 20%)
-}
-
-.bottom-\[100\%\]{
-  bottom:100%
-}
-
-.-bottom-\[calc\(100\%-20\%\)\]{
-  bottom:calc(calc(100% - 20%) * -1)
-}
-
-.-bottom-\[100\%\]{
-  bottom:-100%
-}
-
-.-bottom-\[116vh\]{
-  bottom:-116vh
-}
-
-.-bottom-\[100\]{
-  bottom:-100
-}
-
-.-bottom-\[100vh\]{
-  bottom:-100vh
+.-bottom-\[90vh\]{
+  bottom:-90vh
 }
 
 .-bottom-\[10vh\]{
@@ -1758,20 +1730,24 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   bottom:10vh
 }
 
-.bottom-\[108vh\]{
-  bottom:108vh
+.bottom-\[4vh\]{
+  bottom:4vh
 }
 
-.bottom-\[109vh\]{
-  bottom:109vh
+.bottom-\[30vh\]{
+  bottom:30vh
 }
 
-.bottom-\[vh\]{
-  bottom:vh
+.bottom-\[25vh\]{
+  bottom:25vh
 }
 
-.bottom-\[80vh\]{
-  bottom:80vh
+.bottom-\[15vh\]{
+  bottom:15vh
+}
+
+.bottom-\[3vh\]{
+  bottom:3vh
 }
 
 .\!z-40{
@@ -1996,10 +1972,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   margin-top:22px
 }
 
-.-ml-5{
-  margin-left:-1.25rem
-}
-
 .block{
   display:block
 }
@@ -2177,14 +2149,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .h-px{
   height:1px
-}
-
-.h-\[55px\]{
-  height:55px
-}
-
-.h-\[50px\]{
-  height:50px
 }
 
 .max-h-\[350px\]{
@@ -3136,6 +3100,16 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   border-color:rgb(255 199 0 / var(--tw-border-opacity))
 }
 
+.border-gray-100{
+  --tw-border-opacity:1;
+  border-color:rgb(201 205 211 / var(--tw-border-opacity))
+}
+
+.border-gray-50{
+  --tw-border-opacity:1;
+  border-color:rgb(222 225 229 / var(--tw-border-opacity))
+}
+
 .border-b-slate-200{
   --tw-border-opacity:1;
   border-bottom-color:rgb(215 223 233 / var(--tw-border-opacity))
@@ -3196,7 +3170,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .bg-defult{
   --tw-bg-opacity:1;
-  background-color:rgb(0 159 233 / var(--tw-bg-opacity))
+  background-color:rgb(242 120 81 / var(--tw-bg-opacity))
 }
 
 .bg-error-100{
@@ -3960,7 +3934,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .text-defult{
   --tw-text-opacity:1;
-  color:rgb(0 159 233 / var(--tw-text-opacity))
+  color:rgb(242 120 81 / var(--tw-text-opacity))
 }
 
 .text-error-300{
@@ -4264,6 +4238,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .shadow-sm{
   --tw-shadow:0px 1px 2px rgba(45, 54, 67, 0.05);
   --tw-shadow-colored:0px 1px 2px var(--tw-shadow-color);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-4xl{
+  --tw-shadow: 0vw 0vw 0.5vw 0vw rgb(32 32 32 / 20%);
+  --tw-shadow-colored:0vw 0vw 0.5vw 0vw var(--tw-shadow-color);
   box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
@@ -5055,6 +5035,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:#009fe9bb
 }
 
+.hover\:bg-\[\#f27951ec\]:hover{
+  background-color:#f27951ec
+}
+
 .hover\:bg-blue-100:hover{
   --tw-bg-opacity:1;
   background-color:rgb(180 196 255 / var(--tw-bg-opacity))
@@ -5219,9 +5203,20 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 233 157 / var(--tw-bg-opacity))
 }
 
-.hover\:bg-gray-100:hover{
-  --tw-bg-opacity:1;
-  background-color:rgb(201 205 211 / var(--tw-bg-opacity))
+.hover\:bg-defult-100:hover{
+  background-color:#f2795121
+}
+
+.hover\:bg-defult-700:hover{
+  background-color:#f27951b6
+}
+
+.hover\:bg-defult-900:hover{
+  background-color:#f27951ec
+}
+
+.hover\:bg-defult-800:hover{
+  background-color:#f27951d5
 }
 
 .hover\:text-error-400:hover{
@@ -6082,14 +6077,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
   .lg\:hidden{
     display:none
-  }
-
-  .lg\:h-\[65px\]{
-    height:65px
-  }
-
-  .lg\:h-\[60px\]{
-    height:60px
   }
 
   .lg\:grid-cols-4{
