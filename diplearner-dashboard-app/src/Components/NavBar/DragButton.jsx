@@ -5,7 +5,7 @@ const DragButton = ({ title, children, link }) => {
   return (
     <Link
       to={link}
-      className="w-full h-full flex p-4 rounded-lg cursor-pointer bg-[#009fe9] hover:bg-[#009fe9bb] flex-col justify-center items-center align-middle transition-all delay-300"
+      className="w-full h-full flex p-4 rounded-lg cursor-pointer bg-defult hover:bg-[#009fe9bb] flex-col justify-center items-center align-middle transition-all delay-300"
     >
       <div className="flex justify-center items-center p-2 mx-auto mb-2  bg-white rounded-full w-[60px] h-[60px] ">
         {children}
@@ -17,4 +17,4 @@ const DragButton = ({ title, children, link }) => {
   );
 };
 
-export default React.memo(DragButton);
+export default DragButton;

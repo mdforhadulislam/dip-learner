@@ -1,55 +1,58 @@
-import React from "react";
-import { RiMenu3Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import LogoIcon from "../../Assets/LOGO_3.png";
+import { Navbar } from "keep-react";
+import React, { useState } from "react";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { LuLayoutDashboard } from "react-icons/lu";
+import LOGO from "../../Assets/LOGO_1.png";
+import DragButton from "./DragButton";
 
-const NavBar = ({ action }) => {
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="w-full block">
-      <nav className=" backdrop-blur-md bg-white/60 shadow-3xl px-2 sm:px-4 py-2.5 fixed w-full z-30">
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <Link to={"/"} className={` items-center hidden md:flex`}>
-            <span
-              className={`self-center text-[22px] font-semibold whitespace-nowrap text-[#009fe9] pr-2`}
-            >
-              DipLearner
-            </span>
-          </Link>
+    <Navbar className=" backdrop-blur-md bg-white/60 shadow-3xl  px-3 py-1 fixed w-full z-40">
+      <Navbar.Container className="flex items-center justify-between">
+        <Navbar.Container
+          tag="div"
+          className="md:flex hidden items-center justify-start"
+        >
+          <h1 className=" text-xl font-semibold italic text-defult">
+            DipLearner
+          </h1>
+        </Navbar.Container>
+        <Navbar.Brand>
+          <img src={LOGO} className="p-1" alt="keep" width="120" height="40" />
+        </Navbar.Brand>
 
-          <Link to={"/"} className={`flex items-center`}>
-            <img
-              className="mr-3 h-10 md:w-40 md:h-10"
-              src={LogoIcon}
-              alt="Blood Give"
-            />
-          </Link>
-
-          <div className="w-auto flex justify-start items-center align-middle">
-            
-
-            <div className="flex items-center px-2">
-              <button
-                type="button"
-                className="flex mr-3 text-sm  rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 "
-              >
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src="https://avatars3.githubusercontent.com/u/2763884?s=128"
-                  alt="user photos"
-                />
-              </button>
-            </div>
-
-            <div
-              className="p-1 hover:bg-gray-100 rounded-md  transition-all delay-300 cursor-pointer"
-              onClick={action}
-            >
-              <RiMenu3Line className="w-7 h-7 text-[#009fe9]" />
-            </div>
+        <Navbar.Container
+          id="drawer-swipe"
+          className={`fixed z-40 w-full overflow-y-auto bg-white border-t border-gray-200 rounded-t-lg transition-transform  left-0 right-0 ${
+            isOpen
+              ? "transform-none bottom-[80vh]"
+              : "translate-y-full  bottom-[116vh]"
+          }`}
+        >
+          {/* click bar  */}
+          <div
+            className="p-4 cursor-pointer hover:bg-gray-50"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span className="absolute w-8 h-1 -translate-x-1/2 bg-gray-300 rounded-lg top-3 left-1/2 "></span>
           </div>
-        </div>
-      </nav>
-    </header>
+
+          <div className="grid grid-cols-3 gap-4 p-4 lg:grid-cols-4 max-h-[350px] overflow-auto scrollbar">
+            <DragButton title={"Dashboard"} link={"/"}>
+              <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+            </DragButton>
+          </div>
+        </Navbar.Container>
+
+        <Navbar.Container className="cursor-pointer hover:bg-gray-50 rounded-md">
+          <HiMenuAlt3
+            className="w-8 h-8 text-defult"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+        </Navbar.Container>
+      </Navbar.Container>
+    </Navbar>
   );
 };
 
