@@ -6,7 +6,7 @@ export default function BookLibrary() {
   return (
     <>
      <Head>
-          <title>Hello world</title>
+          <title>DipLarner || Library</title>
         </Head>
       <LibraryHead />
       <LibraryCategories />
