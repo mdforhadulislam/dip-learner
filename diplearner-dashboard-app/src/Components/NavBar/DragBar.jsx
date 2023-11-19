@@ -1,6 +1,11 @@
 import { Navbar } from "keep-react";
 import React from "react";
-import { LuLayoutDashboard } from "react-icons/lu";
+import { AiOutlineUserAdd } from "react-icons/ai";
+import { GiBlackBook, GiBookshelf } from "react-icons/gi";
+import { GrChapterAdd, GrUserSettings } from "react-icons/gr";
+import { LuBookPlus, LuLayoutDashboard } from "react-icons/lu";
+import { MdOutlinePayments, MdWeb } from "react-icons/md";
+import { RiFilePaperLine } from "react-icons/ri";
 import DragButton from "./DragButton";
 
 const DragBar = ({ isOpen, setIsOpen }) => {
@@ -25,29 +30,44 @@ const DragBar = ({ isOpen, setIsOpen }) => {
         <DragButton title={"Dashboard"} link={"/"}>
           <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
         </DragButton>
-
-        <DragButton title={"Dashboard"} link={"/"}>
+        <DragButton title={"Dashboard"} link={"/admin"}>
           <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Dashboard"} link={"/"}>
-          <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+        <DragButton title={"All Books"} link={"/all-book"}>
+          <GiBookshelf className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Dashboard"} link={"/"}>
-          <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+        <DragButton title={"Access Books"} link={"/access-book"}>
+          <GiBlackBook className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Dashboard"} link={"/"}>
-          <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+        <DragButton title={"Profile Setting"} link={"/setting"}>
+          <GrUserSettings className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Dashboard"} link={"/"}>
-          <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+        <DragButton title={"Book"} link={"/book"}>
+          <LuBookPlus className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Dashboard"} link={"/"}>
-          <LuLayoutDashboard className="inline w-8 h-8 text-defult" />
+        <DragButton title={"Chapter"} link={"/chapter"}>
+          <GrChapterAdd className="inline w-8 h-8 text-defult" />
+        </DragButton>
+
+        <DragButton title={"Pages"} link={"/pages"}>
+          <RiFilePaperLine className="inline w-8 h-8 text-defult" />
+        </DragButton>
+
+        <DragButton title={"Payments"} link={"/payments"}>
+          <MdOutlinePayments className="inline w-8 h-8 text-defult" />
+        </DragButton>
+
+        <DragButton title={"User"} link={"/user"}>
+          <AiOutlineUserAdd className="inline w-8 h-8 text-defult" />
+        </DragButton>
+
+        <DragButton title={"Landing Controll"} link={"/user"}>
+          <MdWeb className="inline w-8 h-8 text-defult" />
         </DragButton>
       </div>
     </Navbar.Container>

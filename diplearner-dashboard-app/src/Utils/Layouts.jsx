@@ -8,7 +8,11 @@ const Layouts = ({ children }) => {
     <section className="w-full h-auto relative">
       <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="w-full h-[60px]"></div>
-      {children}
+      <div className="w-full h-auto p-3">
+        <div className="container p-2 shadow-4xl m-auto rounded-lg">
+          {children}
+        </div>
+      </div>
       <DragBar isOpen={isOpen} setIsOpen={setIsOpen} />
     </section>
   );

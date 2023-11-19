@@ -134,6 +134,14 @@ const RouterV1 = () => {
             </Layouts>
           }
         />
+        <Route
+          path="/landing-controll"
+          element={
+            <Layouts>
+              <AdminSetting />
+            </Layouts>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
