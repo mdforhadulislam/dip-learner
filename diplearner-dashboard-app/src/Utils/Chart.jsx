@@ -24,12 +24,7 @@ const Chart = ({ categories, series }) => {
             },
           },
         }}
-        series={[
-          {
-            name: "series1",
-            data: series,
-          },
-        ]}
+        series={series}
         type="area"
         height={200}
       />

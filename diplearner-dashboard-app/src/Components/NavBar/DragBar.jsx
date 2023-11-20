@@ -66,7 +66,12 @@ const DragBar = ({ isOpen, setIsOpen }) => {
           <AiOutlineUserAdd className="inline w-8 h-8 text-defult" />
         </DragButton>
 
-        <DragButton title={"Landing Controll"} link={"/user"}>
+        
+        <DragButton title={"Admin Setting"} link={"/admin/setting"}>
+          <GrUserSettings className="inline w-8 h-8 text-defult" />
+        </DragButton>
+
+        <DragButton title={"Landing Controll"} link={"/landing-controll"}>
           <MdWeb className="inline w-8 h-8 text-defult" />
         </DragButton>
       </div>

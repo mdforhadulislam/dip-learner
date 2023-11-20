@@ -14,6 +14,7 @@ import ReadBook from "../Pages/ReadBook";
 import SingleBook from "../Pages/SingleBook";
 import UserSetting from "../Pages/UserSetting";
 import Layouts from "../Utils/Layouts";
+import LandingControll from "../Pages/Admin/LandingControll";
 
 const RouterV1 = () => {
   return (
@@ -127,7 +128,7 @@ const RouterV1 = () => {
           }
         />
         <Route
-          path="/setting"
+          path="/admin/setting"
           element={
             <Layouts>
               <AdminSetting />
@@ -138,7 +139,7 @@ const RouterV1 = () => {
           path="/landing-controll"
           element={
             <Layouts>
-              <AdminSetting />
+              <LandingControll />
             </Layouts>
           }
         />
