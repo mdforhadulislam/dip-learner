@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import DragBar from "../Components/Navbar/DragBar";
-import NavBar from "../Components/Navbar/NavBar";
+import DragBar from "../Components/NavBar/DragBar";
+import NavBar from "../Components/NavBar/NavBar";
 
 const Layouts = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
