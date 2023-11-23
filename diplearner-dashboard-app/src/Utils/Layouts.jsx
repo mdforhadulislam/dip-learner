@@ -9,7 +9,7 @@ const Layouts = ({ children }) => {
       <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="w-full h-[60px]"></div>
       <div className="w-full h-auto p-3">
-        <div className="container p-2 shadow-4xl m-auto rounded-lg">
+        <div className="container p-2 shadow-4xl m-auto rounded-lg pb-10">
           {children}
         </div>
       </div>

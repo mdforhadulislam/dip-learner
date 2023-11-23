@@ -11,12 +11,9 @@ const UserDashboardChart = () => {
   const copyHandler = () => {
     // Get the text field
     var copyText = document.getElementById("copyBoard");
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
 
     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(copyText.innerText);
     setIsCopy(true);
     setTimeout(() => {
       setIsCopy(false);
@@ -24,8 +21,8 @@ const UserDashboardChart = () => {
   };
 
   useEffect(() => {
-    setDate(new Date());
-  }, [date, isCopy]);
+    return setDate(new Date());
+  }, [date]);
 
   return (
     <div className="w-full h-auto py-2 flex lg:flex-row flex-col gap-4 items-center align-middle justify-center">
@@ -82,12 +79,9 @@ const UserDashboardChart = () => {
                   onClick={copyHandler}
                 />
               )}
-              <input
-                className=" hidden"
-                type="text"
-                value="username12345"
-                id="copyBoard"
-              />
+              <div className=" hidden" id="copyBoard">
+                username104596
+              </div>
             </div>
           </div>
         </div>
@@ -96,4 +90,4 @@ const UserDashboardChart = () => {
   );
 };
 
-export default UserDashboardChart;
+export default React.memo(UserDashboardChart);
