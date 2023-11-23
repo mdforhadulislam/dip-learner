@@ -16,10 +16,6 @@ const UserReadedBook = () => {
           <SingleReadBook />
           <SingleReadBook />
           <SingleReadBook />
-          <SingleReadBook />
-          <SingleReadBook />
-          <SingleReadBook />
-          <SingleReadBook />
         </div>
       </div>
     </div>
