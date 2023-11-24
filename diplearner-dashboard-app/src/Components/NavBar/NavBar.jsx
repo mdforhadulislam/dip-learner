@@ -1,6 +1,7 @@
 import { Navbar } from "keep-react";
 import React from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import LOGO from "../../Assets/LOGO_1.png";
 
 const NavBar = ({ isOpen, setIsOpen }) => {
@@ -11,12 +12,20 @@ const NavBar = ({ isOpen, setIsOpen }) => {
           tag="div"
           className="md:flex hidden items-center justify-start"
         >
-          <h1 className=" text-xl font-semibold italic text-defult">
+          <Link to={"/"} className=" text-xl font-semibold italic text-defult">
             DipLearner
-          </h1>
+          </Link>
         </Navbar.Container>
         <Navbar.Brand>
-          <img src={LOGO} className="p-1" alt="keep" width="120" height="40" />
+          <Link to={"/"}>
+            <img
+              src={LOGO}
+              className="p-1"
+              alt="keep"
+              width="120"
+              height="40"
+            />
+          </Link>
         </Navbar.Brand>
 
         <Navbar.Container className="cursor-pointer hover:bg-defult-100 transition-all rounded-md">

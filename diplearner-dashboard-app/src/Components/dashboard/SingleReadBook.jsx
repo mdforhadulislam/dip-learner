@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const SingleReadBook = () => {
   return (
-    <div className='max-w-[220px] h-auto inline-block m-2'>
+    <div className='max-w-[150px] h-auto inline-block m-2'>
       <div className='w-full h-auto p-2 shadow-4xl rounded-md'>
       <div>
-          <img src={'https://avatars3.githubusercontent.com/u/2763884?s=128'} alt="Book" className="w-[150px] h-[200px] m-auto" />
+          <img src={'https://avatars3.githubusercontent.com/u/2763884?s=128'} alt="Book" className="w-[120px] h-[170px] m-auto" />
         </div>
         <div>
           <h1 className=" text-base font-semibold mb-2">

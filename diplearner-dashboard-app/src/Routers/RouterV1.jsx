@@ -15,6 +15,7 @@ import SingleBook from "../Pages/SingleBook";
 import UserSetting from "../Pages/UserSetting";
 import Layouts from "../Utils/Layouts";
 import LandingControll from "../Pages/Admin/LandingControll";
+import SingleBookPage from "../Pages/SingleBookPage";
 
 const RouterV1 = () => {
   return (
@@ -34,6 +35,14 @@ const RouterV1 = () => {
           element={
             <Layouts>
               <AllBook />
+            </Layouts>
+          }
+        />
+        <Route
+          path="/all-book/:id"
+          element={
+            <Layouts>
+              <SingleBookPage />
             </Layouts>
           }
         />

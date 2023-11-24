@@ -79,3 +79,47 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(102, 102, 102)'><polygon points='0,0 0,100 50,50'/></svg>");
 }
 /* End scroll bar modify */
+
+/* checkbox style start  */
+.checkbox__container .checkbox__container__input label::before {
+  content: "";
+  background-image: url(../Assets/rigth-mark.svg);
+  background-position: center;
+  background-size: cover;
+  width: 36px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  top: -6px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  z-index: 99;
+}
+
+.checkbox__container__input .checked::before {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.checkbox__container__input .unchecked::before {
+  -webkit-transform: scale(0) !important;
+  transform: scale(0) !important;
+}
+
+.checkbox__container .checkbox__container__input label::after {
+  content: "";
+  border: 1.56px solid #F27851;
+  border-radius: 0.3vw;
+  width: 20.4px;
+  height: 18.5px;
+  position: absolute;
+  left: -26.4px;
+  top: 1.5px;
+  /* z-index: 1; */
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(32, 32, 32, 0.15);
+  box-shadow: 0px 0px 6px 0px rgba(32, 32, 32, 0.15);
+}
+
+/* checkbox style start  */
