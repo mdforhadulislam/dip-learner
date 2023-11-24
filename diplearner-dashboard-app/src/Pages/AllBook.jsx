@@ -1,11 +1,11 @@
 import React from "react";
 import AllBookBody from "../Components/AllBook/AllBookBody";
-import AllBookHeadr from "../Components/AllBook/AllBookHeadr";
+import AllBookHeader from "../Components/AllBook/AllBookHeader";
 
 const AllBook = () => {
   return (
     <div className="w-full h-auto">
-      <AllBookHeadr />
+      <AllBookHeader />
       <AllBookBody />
     </div>
   );
