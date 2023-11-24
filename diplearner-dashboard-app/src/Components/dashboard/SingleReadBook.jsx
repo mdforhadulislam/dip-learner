@@ -13,8 +13,8 @@ const SingleReadBook = () => {
             Book hello world - 2024 - (404943)
           </h1>
           <Link
-            className={`px-4 py-2 text-center text-md shadow  hover:bg-[#29b6e0] bg-[#00B1E9] text-white transition duration-300 rounded-md flex items-center align-middle justify-center`}
-            href={"/"}
+            className={`px-4 py-2 text-center text-md shadow  hover:bg-defult-800 bg-defult text-white transition duration-300 rounded-md flex items-center align-middle justify-center`}
+            to={"/ee"}
           >
             <span className="w-full h-auto text-center">Read Again</span>
           </Link>

@@ -13,7 +13,7 @@ const Chart = ({ categories, series }) => {
             sparkline: { enabled: true },
             toolbar: { show: true, tools: { download: true } },
           },
-          colors: ["#ce1c34", "#6ed3cf"],
+          colors: ["#F27851","#6ed3cf" ],
           xaxis: {
             type: "datetime",
             categories: categories,

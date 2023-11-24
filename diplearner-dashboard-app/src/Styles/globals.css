@@ -1746,16 +1746,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   margin:0.25rem
 }
 
-.m-auto{
-  margin:auto
-}
-
-.m-0{
-  margin:0px
-}
-
 .m-2{
   margin:0.5rem
+}
+
+.m-auto{
+  margin:auto
 }
 
 .-mx-1{
@@ -1938,10 +1934,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .mt-\[22px\]{
   margin-top:22px
-}
-
-.mt-0{
-  margin-top:0px
 }
 
 .block{
@@ -2139,20 +2131,16 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   height:1px
 }
 
-.h-\[300px\]{
-  height:300px
-}
-
-.h-\[250px\]{
-  height:250px
-}
-
-.h-\[190px\]{
-  height:190px
-}
-
 .h-\[180px\]{
   height:180px
+}
+
+.h-\[150\]{
+  height:150
+}
+
+.h-\[150px\]{
+  height:150px
 }
 
 .max-h-\[350px\]{
@@ -2161,6 +2149,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .max-h-\[420px\]{
   max-height:420px
+}
+
+.max-h-\[330px\]{
+  max-height:330px
+}
+
+.max-h-\[320px\]{
+  max-height:320px
 }
 
 .\!w-1\/2{
@@ -2325,18 +2321,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   width:1px
 }
 
-.w-\[2\]{
-  width:2
-}
-
-.w-\[220px\]{
-  width:220px
-}
-
-.w-\[140px\]{
-  width:140px
-}
-
 .min-w-\[800px\]{
   min-width:800px
 }
@@ -2381,6 +2365,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   max-width:140px
 }
 
+.max-w-\[220px\]{
+  max-width:220px
+}
+
 .max-w-\[300px\]{
   max-width:300px
 }
@@ -2411,14 +2399,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .max-w-xs{
   max-width:20rem
-}
-
-.max-w-\[220px\]{
-  max-width:220px
-}
-
-.max-w-\[200px\]{
-  max-width:200px
 }
 
 .flex-1{
@@ -3022,6 +3002,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   border-color:rgb(222 225 229 / var(--tw-border-opacity))
 }
 
+.border-gray-600{
+  --tw-border-opacity:1;
+  border-color:rgb(96 105 119 / var(--tw-border-opacity))
+}
+
 .border-green-500{
   --tw-border-opacity:1;
   border-color:rgb(17 167 92 / var(--tw-border-opacity))
@@ -3156,14 +3141,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   border-color:rgb(255 199 0 / var(--tw-border-opacity))
 }
 
-.border-gray-400{
+.border-gray-500{
   --tw-border-opacity:1;
-  border-color:rgb(136 144 159 / var(--tw-border-opacity))
-}
-
-.border-gray-600{
-  --tw-border-opacity:1;
-  border-color:rgb(96 105 119 / var(--tw-border-opacity))
+  border-color:rgb(114 124 141 / var(--tw-border-opacity))
 }
 
 .border-b-slate-200{
@@ -3203,6 +3183,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .\!bg-transparent{
   background-color:transparent !important
+}
+
+.bg-\[\#00B1E9\]{
+  --tw-bg-opacity:1;
+  background-color:rgb(0 177 233 / var(--tw-bg-opacity))
 }
 
 .bg-blue-25{
@@ -3504,11 +3489,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 242 196 / var(--tw-bg-opacity))
 }
 
-.bg-\[\#00B1E9\]{
-  --tw-bg-opacity:1;
-  background-color:rgb(0 177 233 / var(--tw-bg-opacity))
-}
-
 .bg-opacity-50{
   --tw-bg-opacity:0.5
 }
@@ -3752,6 +3732,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   padding-bottom:5px
 }
 
+.py-8{
+  padding-top:2rem;
+  padding-bottom:2rem
+}
+
 .pb-1{
   padding-bottom:0.25rem
 }
@@ -3878,6 +3863,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .pt-5{
   padding-top:1.25rem
+}
+
+.pt-\[\]{
+  padding-top:
+}
+
+.pt-\[0\.5px\]{
+  padding-top:0.5px
 }
 
 .text-left{
@@ -5208,6 +5201,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(45 54 67 / var(--tw-bg-opacity)) !important
 }
 
+.hover\:bg-\[\#29b6e0\]:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(41 182 224 / var(--tw-bg-opacity))
+}
+
 .hover\:bg-blue-100:hover{
   --tw-bg-opacity:1;
   background-color:rgb(180 196 255 / var(--tw-bg-opacity))
@@ -5380,9 +5378,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 233 157 / var(--tw-bg-opacity))
 }
 
-.hover\:bg-\[\#29b6e0\]:hover{
-  --tw-bg-opacity:1;
-  background-color:rgb(41 182 224 / var(--tw-bg-opacity))
+.hover\:bg-defult-700:hover{
+  background-color:#f27951b6
 }
 
 .hover\:text-error-400:hover{

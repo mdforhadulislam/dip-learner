@@ -7,7 +7,7 @@ import Chart from "../../Utils/Chart";
 const UserProfileCard = () => {
   return (
     <div className="overflow-hidden shadow-4xl rounded-md">
-      <div className="w-full h-auto p-3">
+      <div className="w-full h-auto p-3 flex flex-row">
         <div className="w-full h-auto flex justify-center items-center relative">
           {/* profile image  */}
           <img
@@ -23,7 +23,7 @@ const UserProfileCard = () => {
             </h1>
             <span className="w-[150px] h-[1px] inline-block bg-gray-400 rounded-md"></span>
             <div className="flex flex-row justify-center items-center">
-              <div className="w-auto flex flex-col justify-center items-center align-middle p-2 pr-5 text-[#CE1C34]">
+              <div className="w-auto flex flex-col justify-center items-center align-middle p-2 pr-5  text-defult">
                 <div className=" text-lg mb-1">Views</div>
                 <div className=" mb-1 flex gap-2">
                   <span className=" text-base text-gray-800 font-semibold">
