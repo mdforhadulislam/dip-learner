@@ -2,7 +2,9 @@ import React from 'react'
 
 const AllBookHeader = () => {
   return (
-    <div>AllBookHeader</div>
+    <div className='w-full h-auto'>
+      
+    </div>
   )
 }
 

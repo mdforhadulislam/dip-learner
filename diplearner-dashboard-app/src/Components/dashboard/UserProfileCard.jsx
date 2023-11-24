@@ -7,8 +7,8 @@ import Chart from "../../Utils/Chart";
 const UserProfileCard = () => {
   return (
     <div className="overflow-hidden shadow-4xl rounded-md">
-      <div className="w-full h-auto p-3 flex flex-row">
-        <div className="w-full h-auto flex justify-center items-center relative">
+      <div className="w-full h-auto p-3 flex flex-row justify-center items-center align-middle">
+        <div className="h-auto flex justify-center items-center relative">
           {/* profile image  */}
           <img
             className="w-[100px] h-[100px] rounded-full shadow-3xl border"
