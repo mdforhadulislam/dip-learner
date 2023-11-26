@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SingleBookBox = () => {
   return (
-    <Link to={"/all-book/rty"}div className="max-w-[120px] h-auto inline-block m-2">
+    <Link to={"/all-book/rty"} className="max-w-[120px] h-auto inline-block m-2">
       <div className="w-full h-auto p-2 shadow-4xl rounded-md pb-1">
         <div>
           <img

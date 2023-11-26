@@ -5,6 +5,7 @@ import AdminDashboard from "../Pages/Admin/AdminDashboard";
 import AdminSetting from "../Pages/Admin/AdminSetting";
 import Book from "../Pages/Admin/Book";
 import Chapter from "../Pages/Admin/Chapter";
+import LandingControll from "../Pages/Admin/LandingControll";
 import Pages from "../Pages/Admin/Pages";
 import Payments from "../Pages/Admin/Payments";
 import User from "../Pages/Admin/User";
@@ -12,10 +13,9 @@ import AllBook from "../Pages/AllBook";
 import Dashboard from "../Pages/Dashboard";
 import ReadBook from "../Pages/ReadBook";
 import SingleBook from "../Pages/SingleBook";
+import SingleBookPage from "../Pages/SingleBookPage";
 import UserSetting from "../Pages/UserSetting";
 import Layouts from "../Utils/Layouts";
-import LandingControll from "../Pages/Admin/LandingControll";
-import SingleBookPage from "../Pages/SingleBookPage";
 
 const RouterV1 = () => {
   return (
@@ -42,7 +42,7 @@ const RouterV1 = () => {
           path="/all-book/:id"
           element={
             <Layouts>
-              <SingleBookPage />
+              <SingleBook />
             </Layouts>
           }
         />
@@ -55,18 +55,18 @@ const RouterV1 = () => {
           }
         />
         <Route
-          path="/access-book/:id"
-          element={
-            <Layouts>
-              <SingleBook />
-            </Layouts>
-          }
-        />
-        <Route
           path="/access-book/:id/read"
           element={
             <Layouts>
               <ReadBook />
+            </Layouts>
+          }
+        />
+        <Route
+          path="/access-book/:id/read/:chapterId"
+          element={
+            <Layouts>
+              <SingleBookPage />
             </Layouts>
           }
         />
