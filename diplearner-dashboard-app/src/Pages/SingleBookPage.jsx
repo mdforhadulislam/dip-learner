@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { BsFullscreen } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
-import { useParams } from "react-router-dom";
+import { IoArrowBack } from "react-icons/io5";
+import { IoCaretBack } from "react-icons/io5";
+import { Link, useParams } from "react-router-dom";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 const SingleBookPage = () => {
   const { id, chapterId } = useParams();
@@ -28,6 +31,15 @@ const SingleBookPage = () => {
         hello world - page - 2
       </div>
       <div className="w-full h-full relative">
+        <div className="p-2 absolute left-0 -top-12 rounded-md shadow-3xl w-auto inline-block">
+          <Link to={`/access-book/${id}/read/`}>
+            <IoCaretBack
+              className="w-6 h-6 cursor-pointer"
+              onClick={() => setIsView(!isView)}
+            />
+          </Link>
+        </div>
+
         <div className="p-2 absolute right-0 -top-12 rounded-md shadow-3xl w-auto inline-block">
           <BsFullscreen
             className="w-6 h-6 cursor-pointer"
@@ -39,6 +51,15 @@ const SingleBookPage = () => {
           src={"https://avatars3.githubusercontent.com/u/2763884?s=1288"}
           alt="Book"
         />
+      </div>
+
+      <div className="w-full h-auto py-2 px-3 flex justify-center items-center align-middle text-white gap-2 text-lg">
+        <button className="w-full h-auto py-1 px-4 flex justify-center align-middle items-center bg-defult shadow-4xl border border-defult rounded-md  gap-2">
+          <IoArrowBack className="w-8 h-8 p-1" /> Privius
+        </button>
+        <button className="w-full h-auto py-1 px-4 flex justify-center align-middle items-center bg-defult shadow-4xl border border-defult rounded-md  gap-2">
+          Next <IoArrowForwardOutline className="w-8 h-8 p-1" />
+        </button>
       </div>
     </div>
   );

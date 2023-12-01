@@ -35,26 +35,21 @@ const UserProfileHeader = () => {
               </div>
             </div>
             <div className="col-start-2 col-span-3 lg:pr-12 md:pl-2 flex justify-center items-center align-middle">
-
-
+              <h1 className="text-4xl sm:text-6xl font-semibold text-slate-800 uppercase text-center">
+                Forhadul Islam Islam
+              </h1>
             </div>
-            <div className="col-start-2 col-span-3 lg:pr-12 md:pl-2">
-
-
-               
+            <div className="col-start-2 col-span-3 lg:pr-12 md:pl-2 flex justify-center items-start align-top">
+              <div className="w-[100px] h-[1px] bg-defult mb-4 mt-2"></div>
+              <span className="text-defult transition-all duration-300 px-3">
+                ENTERPRISE
+              </span>
+              <div className="w-[100px] h-[1px] bg-defult mb-4 mt-2"></div>
             </div>
           </div>
         </div>
 
-
-
-
-
         <UserAboutContainer />
-
-
-
-
       </div>
     </div>
   );

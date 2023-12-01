@@ -63,7 +63,7 @@ const RouterV1 = () => {
           }
         />
         <Route
-          path="/access-book/:id/read/:chapterId"
+          path="/access-book/:id/read/:chapterId/:pageId"
           element={
             <Layouts>
               <SingleBookPage />

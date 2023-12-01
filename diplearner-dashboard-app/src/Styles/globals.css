@@ -1880,10 +1880,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   margin-inline-start:-0.5rem
 }
 
-.-mt-\[5px\]{
-  margin-top:-5px
-}
-
 .mb-0{
   margin-bottom:0px
 }
@@ -1974,10 +1970,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .mt-2\.5{
   margin-top:0.625rem
-}
-
-.mt-3{
-  margin-top:0.75rem
 }
 
 .mt-4{
@@ -3281,11 +3273,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:transparent !important
 }
 
-.bg-\[\#ce1c34\]{
-  --tw-bg-opacity:1;
-  background-color:rgb(206 28 52 / var(--tw-bg-opacity))
-}
-
 .bg-blue-25{
   --tw-bg-opacity:1;
   background-color:rgb(242 245 255 / var(--tw-bg-opacity))
@@ -4058,6 +4045,24 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   letter-spacing:-0.2px
 }
 
+.text-4xl{
+  font-size:26px;
+  line-height:40px;
+  letter-spacing:-0.5px
+}
+
+.text-6xl{
+  font-size:30px;
+  line-height:43px;
+  letter-spacing:-0.5px
+}
+
+.text-3xl{
+  font-size:24px;
+  line-height:36px;
+  letter-spacing:-0.4px
+}
+
 .font-bold{
   font-weight:700
 }
@@ -4123,11 +4128,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .text-\[\#6ed3cf\]{
   --tw-text-opacity:1;
   color:rgb(110 211 207 / var(--tw-text-opacity))
-}
-
-.text-\[\#ce1c34\]{
-  --tw-text-opacity:1;
-  color:rgb(206 28 52 / var(--tw-text-opacity))
 }
 
 .text-blue-100{
@@ -4973,8 +4973,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .rdp {
   margin: 0 !important;
   --rdp-cell-size: 35px !important;
-  --rdp-accent-color: #ce1c34 !important;
-  --rdp-background-color: #ce1c3496 !important;
+  --rdp-accent-color: #F27851 !important;
+  --rdp-background-color: #F2785196 !important;
   --rdp-accent-color-dark: 0;
   --rdp-background-color-dark: 0;
   --rdp-outline: 2px solid var(--rdp-accent-color);
@@ -5593,9 +5593,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 233 157 / var(--tw-bg-opacity))
 }
 
-.hover\:text-\[\#ce1c34\]:hover{
+.hover\:text-defult:hover{
   --tw-text-opacity:1;
-  color:rgb(206 28 52 / var(--tw-text-opacity))
+  color:rgb(242 120 81 / var(--tw-text-opacity))
 }
 
 .hover\:text-error-400:hover{
@@ -6404,6 +6404,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     font-size:12px;
     line-height:20px;
     letter-spacing:-0.2px
+  }
+
+  .sm\:text-6xl{
+    font-size:30px;
+    line-height:43px;
+    letter-spacing:-0.5px
   }
 }
 

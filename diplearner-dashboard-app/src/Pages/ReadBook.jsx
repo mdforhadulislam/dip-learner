@@ -36,7 +36,7 @@ const ReadBook = () => {
                       key={item.name}
                       className=" w-full h-auto p-1 m-2 px-3 cursor-pointer rounded-md text-gray-800 hover:underline"
                     >
-                      <Link to={"/access-book/idididid/read/chapterid"}>
+                      <Link to={"/access-book/idididid/read/chapterid/page"}>
                         {item.id}. {item.name}
                       </Link>
                     </li>

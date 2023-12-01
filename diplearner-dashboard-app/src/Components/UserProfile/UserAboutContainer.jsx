@@ -1,6 +1,8 @@
 import React from "react";
 import { DayPicker } from "react-day-picker";
-import { MdOutlineBloodtype, MdWorkOutline } from "react-icons/md";
+import { LuTimer } from "react-icons/lu";
+import { MdWorkOutline } from "react-icons/md";
+import { PiStudent } from "react-icons/pi";
 import { TbCurrentLocation } from "react-icons/tb";
 
 const UserAboutContainer = () => {
@@ -19,28 +21,35 @@ const UserAboutContainer = () => {
       <div className="w-full col-start-2 col-span-1  p-2 lg:pr-4">
         <div className="w-full h-auto shadow-3xl rounded-lg p-3">
           <h1 className="text-2xl font-semibold uppercase">Forhadul Islam</h1>
-          <div className="w-[100px] h-[1px] bg-[#ce1c34] mb-4 mt-2"></div>
+          <div className="w-[100px] h-[1px] bg-defult mb-4 mt-2"></div>
 
-          <div className="hover:text-[#ce1c34] transition-all duration-300 flex items-center align-middle text-left mb-2">
+          <div className="hover:text-defult transition-all duration-300 flex items-center align-middle text-left mb-2">
             <MdWorkOutline className="w-6 h-6" />
             <div className=" ml-2 text-[16px]">Work At Study</div>
           </div>
 
-          <div className="hover:text-[#ce1c34] transition-all duration-300 flex items-center align-middle text-left  mb-2">
-            <TbCurrentLocation className="w-6 h-6" />
-            <div className=" ml-2 text-[16px]">Dhaka,Bangladesh</div>
+          <div className="hover:text-defult transition-all duration-300 flex items-center align-middle text-left  mb-2">
+            <PiStudent className="w-6 h-6" />
+            <div className=" ml-2 text-[16px]">
+              Studies at Dhaka polytechnic institute
+            </div>
           </div>
 
-          <div className="hover:text-[#ce1c34] transition-all duration-300 flex items-center align-middle text-left  mb-2">
-            <MdOutlineBloodtype className="w-6 h-6" />
-            <div className=" ml-2 text-[16px]">27/02/2023 Last Donate Date</div>
+          <div className="hover:text-defult transition-all duration-300 flex items-center align-middle text-left  mb-2">
+            <TbCurrentLocation className="w-6 h-6" />
+            <div className=" ml-2 text-[16px]">Lives in Dhaka,Bangladesh</div>
+          </div>
+
+          <div className="hover:text-defult transition-all duration-300 flex items-center align-middle text-left  mb-2">
+            <LuTimer className="w-6 h-6" />
+            <div className=" ml-2 text-[16px]">Joined on 27/02/2023</div>
           </div>
         </div>
       </div>
       <div className="w-full col-start-3 col-span-1  p-2 lg:pr-4">
         <div className="w-full h-auto shadow-3xl rounded-lg p-3">
           <h1 className="text-2xl font-semibold uppercase">About Myself</h1>
-          <div className="w-[100px] h-[1px] bg-[#ce1c34] mb-4 mt-2"></div>
+          <div className="w-[100px] h-[1px] bg-defult mb-4 mt-2"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             sapiente dolores dolorum pariatur nesciunt beatae cum laboriosam,
