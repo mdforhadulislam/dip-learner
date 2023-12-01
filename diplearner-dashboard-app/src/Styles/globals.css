@@ -1574,6 +1574,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   top:-0.25rem
 }
 
+.-top-12{
+  top:-3rem
+}
+
 .-top-14{
   top:-3.5rem
 }
@@ -1674,6 +1678,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   right:0.75rem
 }
 
+.right-5{
+  right:1.25rem
+}
+
 .right-6{
   right:1.5rem
 }
@@ -1712,6 +1720,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .top-3{
   top:0.75rem
+}
+
+.top-5{
+  top:1.25rem
 }
 
 .top-\[25px\]{
@@ -1764,6 +1776,26 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .order-3{
   order:3
+}
+
+.col-span-1{
+  grid-column:span 1 / span 1
+}
+
+.col-span-3{
+  grid-column:span 3 / span 3
+}
+
+.col-start-2{
+  grid-column-start:2
+}
+
+.col-start-3{
+  grid-column-start:3
+}
+
+.row-span-2{
+  grid-row:span 2 / span 2
 }
 
 .m-1{
@@ -1846,6 +1878,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .-ms-2{
   margin-inline-start:-0.5rem
+}
+
+.-mt-\[5px\]{
+  margin-top:-5px
 }
 
 .mb-0{
@@ -1940,6 +1976,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   margin-top:0.625rem
 }
 
+.mt-3{
+  margin-top:0.75rem
+}
+
 .mt-4{
   margin-top:1rem
 }
@@ -1950,6 +1990,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .mt-6{
   margin-top:1.5rem
+}
+
+.mt-\[-150px\]{
+  margin-top:-150px
 }
 
 .mt-\[-5px\]{
@@ -2128,12 +2172,20 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   height:20px
 }
 
+.h-\[220px\]{
+  height:220px
+}
+
 .h-\[22px\]{
   height:22px
 }
 
 .h-\[330px\]{
   height:330px
+}
+
+.h-\[350px\]{
+  height:350px
 }
 
 .h-\[60px\]{
@@ -2161,6 +2213,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .h-px{
   height:1px
+}
+
+.h-screen{
+  height:100vh
 }
 
 .max-h-\[320px\]{
@@ -2295,6 +2351,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   width:1px
 }
 
+.w-\[200px\]{
+  width:200px
+}
+
 .w-\[20px\]{
   width:20px
 }
@@ -2335,6 +2395,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .w-px{
   width:1px
+}
+
+.w-screen{
+  width:100vw
 }
 
 .min-w-\[800px\]{
@@ -2595,6 +2659,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .grid-cols-3{
   grid-template-columns:repeat(3, minmax(0, 1fr))
+}
+
+.grid-rows-2{
+  grid-template-rows:repeat(2, minmax(0, 1fr))
 }
 
 .flex-row{
@@ -2899,6 +2967,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .border-\[1\.5px\]{
   border-width:1.5px
+}
+
+.border-\[10px\]{
+  border-width:10px
 }
 
 .\!border-b{
@@ -3209,6 +3281,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:transparent !important
 }
 
+.bg-\[\#ce1c34\]{
+  --tw-bg-opacity:1;
+  background-color:rgb(206 28 52 / var(--tw-bg-opacity))
+}
+
 .bg-blue-25{
   --tw-bg-opacity:1;
   background-color:rgb(242 245 255 / var(--tw-bg-opacity))
@@ -3231,6 +3308,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .bg-defult{
   --tw-bg-opacity:1;
   background-color:rgb(242 120 81 / var(--tw-bg-opacity))
+}
+
+.bg-defult-100{
+  background-color:#f2795121
 }
 
 .bg-error-100{
@@ -3517,8 +3598,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   --tw-bg-opacity:0.5
 }
 
-.bg-none{
-  background-image:none
+.bg-cover{
+  background-size:cover
+}
+
+.bg-center{
+  background-position:center
 }
 
 .fill-blue-600{
@@ -3927,6 +4012,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   letter-spacing:-0.3px
 }
 
+.text-\[14px\]{
+  font-size:14px
+}
+
 .text-\[15px\]{
   font-size:15px
 }
@@ -3969,10 +4058,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   letter-spacing:-0.2px
 }
 
-.text-\[14px\]{
-  font-size:14px
-}
-
 .font-bold{
   font-weight:700
 }
@@ -3987,6 +4072,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .font-semibold{
   font-weight:600
+}
+
+.uppercase{
+  text-transform:uppercase
 }
 
 .italic{
@@ -4034,6 +4123,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .text-\[\#6ed3cf\]{
   --tw-text-opacity:1;
   color:rgb(110 211 207 / var(--tw-text-opacity))
+}
+
+.text-\[\#ce1c34\]{
+  --tw-text-opacity:1;
+  color:rgb(206 28 52 / var(--tw-text-opacity))
 }
 
 .text-blue-100{
@@ -4866,6 +4960,27 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 /* checkbox style start  */
 
+/* date picker style  */
+
+.rdp-day_selected {
+  background-color: #F27851 !important;
+}
+
+.rdp-cell {
+  cursor: pointer;
+}
+
+.rdp {
+  margin: 0 !important;
+  --rdp-cell-size: 35px !important;
+  --rdp-accent-color: #ce1c34 !important;
+  --rdp-background-color: #ce1c3496 !important;
+  --rdp-accent-color-dark: 0;
+  --rdp-background-color-dark: 0;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+}
+
 .first-letter\:uppercase::first-letter{
   text-transform:uppercase
 }
@@ -5307,6 +5422,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:#f2795121
 }
 
+.hover\:bg-defult-200:hover{
+  background-color:#f2795121
+}
+
 .hover\:bg-defult-800:hover{
   background-color:#f27951d5
 }
@@ -5474,6 +5593,11 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 233 157 / var(--tw-bg-opacity))
 }
 
+.hover\:text-\[\#ce1c34\]:hover{
+  --tw-text-opacity:1;
+  color:rgb(206 28 52 / var(--tw-text-opacity))
+}
+
 .hover\:text-error-400:hover{
   --tw-text-opacity:1;
   color:rgb(255 87 77 / var(--tw-text-opacity))
@@ -5542,6 +5666,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 .hover\:text-white:hover{
   --tw-text-opacity:1;
   color:rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.hover\:underline:hover{
+  text-decoration-line:underline
 }
 
 .focus\:border-blue-500:focus{
@@ -6224,6 +6352,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     margin-bottom:0px
   }
 
+  .sm\:block{
+    display:block
+  }
+
   .sm\:flex{
     display:flex
   }
@@ -6281,8 +6413,28 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     margin-right:0.5rem
   }
 
+  .md\:-mt-24{
+    margin-top:-6rem
+  }
+
+  .md\:mb-0{
+    margin-bottom:0px
+  }
+
   .md\:flex{
     display:flex
+  }
+
+  .md\:grid{
+    display:grid
+  }
+
+  .md\:h-\[100px\]{
+    height:100px
+  }
+
+  .md\:h-\[280px\]{
+    height:280px
   }
 
   .md\:h-auto{
@@ -6295,6 +6447,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
   .md\:w-48{
     width:12rem
+  }
+
+  .md\:w-\[250px\]{
+    width:250px
   }
 
   .md\:w-\[50\%\]{
@@ -6330,8 +6486,29 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     border-bottom-left-radius:0.5rem
   }
 
+  .md\:bg-contain{
+    background-size:contain
+  }
+
+  .md\:p-0{
+    padding:0px
+  }
+
+  .md\:p-2{
+    padding:0.5rem
+  }
+
+  .md\:px-20{
+    padding-left:5rem;
+    padding-right:5rem
+  }
+
   .md\:pb-0{
     padding-bottom:0px
+  }
+
+  .md\:pl-2{
+    padding-left:0.5rem
   }
 
   .md\:text-2xl{
@@ -6376,12 +6553,20 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 @media (min-width: 1024px){
+  .lg\:ml-\[14px\]{
+    margin-left:14px
+  }
+
   .lg\:mt-0{
     margin-top:0px
   }
 
   .lg\:block{
     display:block
+  }
+
+  .lg\:grid{
+    display:grid
   }
 
   .lg\:hidden{
@@ -6404,6 +6589,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     flex-direction:row
   }
 
+  .lg\:items-start{
+    align-items:flex-start
+  }
+
   .lg\:items-center{
     align-items:center
   }
@@ -6421,6 +6610,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   .lg\:py-6{
     padding-top:1.5rem;
     padding-bottom:1.5rem
+  }
+
+  .lg\:pr-12{
+    padding-right:3rem
+  }
+
+  .lg\:pr-4{
+    padding-right:1rem
   }
 }
 

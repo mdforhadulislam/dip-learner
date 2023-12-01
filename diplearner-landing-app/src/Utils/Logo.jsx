@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import LogoPng from "../../public/LOGO_3.png";
+import LogoPng from "../../public/LOGO_1.png";
 
 const Logo = ({ style, link, textStyle }) => {
   return (
     <Link
       href={link || "/"}
-      title={"Blood Donation Media"}
-      about={"Blood Donation Media Home Page"}
+      title={"Dip Learner"}
+      about={"Dip Learner"}
       className={`w-auto flex items-center`}
     >
       <Image

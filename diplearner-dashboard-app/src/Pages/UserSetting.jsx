@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import UserProfileHeader from "../Components/UserProfile/UserProfileHeader";
 
 const UserSetting = () => {
   return (
-    <div>UserSetting</div>
-  )
-}
+    <>
+      <UserProfileHeader />
+    </>
+  );
+};
 
-export default UserSetting
+export default UserSetting;

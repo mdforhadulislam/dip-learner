@@ -123,3 +123,25 @@
 }
 
 /* checkbox style start  */
+
+
+
+/* date picker style  */
+.rdp-day_selected {
+  background-color: #F27851 !important;
+}
+
+.rdp-cell {
+  cursor: pointer;
+}
+
+.rdp {
+  margin: 0 !important;
+  --rdp-cell-size: 35px !important;
+  --rdp-accent-color: #ce1c34 !important;
+  --rdp-background-color: #ce1c3496 !important;
+  --rdp-accent-color-dark: 0;
+  --rdp-background-color-dark: 0;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+}
