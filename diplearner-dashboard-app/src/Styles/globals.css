@@ -2219,6 +2219,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   max-height:350px
 }
 
+.min-h-\[150px\]{
+  min-height:150px
+}
+
 .\!w-1\/2{
   width:50% !important
 }
@@ -3581,6 +3585,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   background-color:rgb(255 242 196 / var(--tw-bg-opacity))
 }
 
+.bg-white\/20{
+  background-color:rgb(255 255 255 / 0.2)
+}
+
 .bg-opacity-50{
   --tw-bg-opacity:0.5
 }
@@ -3999,6 +4007,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   letter-spacing:-0.3px
 }
 
+.text-4xl{
+  font-size:26px;
+  line-height:40px;
+  letter-spacing:-0.5px
+}
+
 .text-\[14px\]{
   font-size:14px
 }
@@ -4043,24 +4057,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
   font-size:12px;
   line-height:20px;
   letter-spacing:-0.2px
-}
-
-.text-4xl{
-  font-size:26px;
-  line-height:40px;
-  letter-spacing:-0.5px
-}
-
-.text-6xl{
-  font-size:30px;
-  line-height:43px;
-  letter-spacing:-0.5px
-}
-
-.text-3xl{
-  font-size:24px;
-  line-height:36px;
-  letter-spacing:-0.4px
 }
 
 .font-bold{
@@ -6396,6 +6392,12 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     padding-right:2rem
   }
 
+  .sm\:text-6xl{
+    font-size:30px;
+    line-height:43px;
+    letter-spacing:-0.5px
+  }
+
   .sm\:text-\[17px\]{
     font-size:17px
   }
@@ -6404,12 +6406,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     font-size:12px;
     line-height:20px;
     letter-spacing:-0.2px
-  }
-
-  .sm\:text-6xl{
-    font-size:30px;
-    line-height:43px;
-    letter-spacing:-0.5px
   }
 }
 
@@ -6441,6 +6437,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
   .md\:h-\[280px\]{
     height:280px
+  }
+
+  .md\:h-\[300px\]{
+    height:300px
   }
 
   .md\:h-auto{
